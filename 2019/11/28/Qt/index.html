@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Sakura">
+
+
+    <meta name="subtitle" content="Neworld">
+
+
+
+
+<title>Single Dog | Sakura</title>
+
+
+
+    <link rel="icon" href="/dfavicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Sakura&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="https://www.gettyimages.co.uk/" target="_blank" rel="noopener">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Sakura&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="https://www.gettyimages.co.uk/" target="_blank" rel="noopener">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Single Dog</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Sakura</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">November 28, 2019&nbsp;&nbsp;23:29:34</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E4%BA%91%E4%B8%8E%E6%A2%A6/">云与梦</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h1 id="Qt浅触"><a href="#Qt浅触" class="headerlink" title="Qt浅触"></a>Qt浅触</h1><h2 id="Qt介绍"><a href="#Qt介绍" class="headerlink" title="Qt介绍"></a>Qt介绍</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p> 一个跨平台c++库，用来开发图形界面，也可以开发不带界面的命令行。存在Phthon、Ruby、Perl脚本语言的绑定。</p>
+<h3 id="Qt可以做什么"><a href="#Qt可以做什么" class="headerlink" title="Qt可以做什么"></a>Qt可以做什么</h3><p> 被当做一个GUI库，可以开发图形界面应用程序<br><strong>多线程</strong>，数据库访问，图像处理、音频视频处理、网络通信、文件操作</p>
+<blockquote>
+<p>简单的说，Qt主要用于桌面程序开发和嵌入式开发</p>
+</blockquote>
+<h3 id="Qt和KDE纠葛"><a href="#Qt和KDE纠葛" class="headerlink" title="Qt和KDE纠葛"></a>Qt和KDE纠葛</h3><p>KDE 是采用 GPL 许可证发布的开源软件，而最初 Qt 是商业授权的，存在商业侵权风险，GNOME 则是基于开源 GTK 库的，没有什么商业风险，这一度是 GNOME 优越于 KDE 的特性。由于 Qt 的商业授权，KDE 社区一度混乱纠结，与此同时 GNOME 则如火如荼发展起来了。 KDE 毕竟算是亲儿子，被另一波人欺负，奇趣科技公司当然看不下去了，最后是奇趣科技公司为了赢得开发者的支持，为 Qt 增加了 GPL 的开源授权， 对于开源社区而言，遵循 GPL 使用 Qt 就不需要付费，这为 KDE 解决了燃眉之急。</p>
+<h3 id="Qt与其他Gui库的比较"><a href="#Qt与其他Gui库的比较" class="headerlink" title="Qt与其他Gui库的比较"></a>Qt与其他Gui库的比较</h3><p>Windows 下的 GUI 解决方案比较多：</p>
+<ul>
+<li>基于 C++ 的有 Qt、MFC、WTL、wxWidgets、DirectUI、Htmlayout；</li>
+<li>基于 C# 的有 WinForm、WPF；</li>
+<li>基于 Java 的有 AWT、Swing；</li>
+<li>基于 Pascal 的 有Delphi；</li>
+<li>基于Go语言的有 walk 和 electron；</li>
+<li>还有国内初露头角的 aardio；</li>
+<li>Visual Basic 曾经很流行，现在逐渐失去了色彩；</li>
+<li>如果你有 Web 开发经验，也可以基于 Webkit 或 Chromium 将网页转换为桌面程序。<h4 id="Linux下的GUI库"><a href="#Linux下的GUI库" class="headerlink" title="Linux下的GUI库"></a>Linux下的GUI库</h4>Linux 下常用的 GUI 库有基于 C++ 的 Qt、GTK+、wxWidgets，以及基于 Java 的 AWT 和 Swing。其中最著名的就是 Qt 和 GTK+：KDE 桌面系统已经将 Qt 作为默认的 GUI 库，Gnome 桌面系统也将 GTK+ 作为默认的 GUI 库。<h3 id="QML"><a href="#QML" class="headerlink" title="QML"></a>QML</h3>QML脚本编程-适用于手机移动应用开发。类似网页设计HTML是一种<a href="https://baike.baidu.com/item/%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80/5964436?fr=aladdin" target="_blank" rel="noopener">标记语言</a>)，可以借助CSS对它没话，也可以用<a href="http://c.biancheng.net/js/" target="_blank" rel="noopener">JavaScript</a>对其美化</li>
+<li>不同平台下QML使用相同的渲染机制，界面效果一致，不会随操作系统的不同变化。</li>
+<li>只能用来进行界面设计和人机交互，只能胜任UI部分</li>
+</ul>
+<hr>
+<h3 id="QT的安装和下载"><a href="#QT的安装和下载" class="headerlink" title="QT的安装和下载"></a>QT的安装和下载</h3><ul>
+<li><a href="http://download.qt.io/" target="_blank" rel="noopener">下载路径</a></li>
+</ul>
+<p><strong>目录结构说明</strong></p>
+<p><img src="en-resource://database/1408:0" alt="7a5eacf716593f5b1a084cbe052bf367.png"></p>
+<p><img src="en-resource://database/1410:0" alt="ab13f51a3983ae2ab551dea01e7e099a.png"></p>
+<h3 id="Qt用到的开发工具"><a href="#Qt用到的开发工具" class="headerlink" title="Qt用到的开发工具"></a>Qt用到的开发工具</h3><h4 id="GUN工具集"><a href="#GUN工具集" class="headerlink" title="GUN工具集"></a><a href="http://c.biancheng.net/view/3868.html" target="_blank" rel="noopener">GUN工具集</a></h4><p>GUN项目是为了创建自由的类UNix系统，也因此开发出很多开源的系统工具，其中非常著名的就是<a href="http://c.biancheng.net/gcc/" target="_blank" rel="noopener">GCC</a>（GNU Compiler Collection，GNU编译器套件）<br><strong>Qt工具集</strong></p>
+<ul>
+<li>qmake：核心项目构建工具，可以生产跨平台的.pro项目</li>
+<li>uic： User Interface Compier，用户界面编译器</li>
+<li>…………略<h2 id="Qt开发"><a href="#Qt开发" class="headerlink" title="Qt开发"></a>Qt开发</h2><h3 id="编程过程涉及术语"><a href="#编程过程涉及术语" class="headerlink" title="编程过程涉及术语"></a>编程过程涉及术语</h3><h4 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h4></li>
+<li>Qt使用.pro文件管理项目</li>
+<li>VC++使用.vcproj作项目文件<h4 id="Makefile"><a href="#Makefile" class="headerlink" title="Makefile"></a>Makefile</h4>生产脚本<h4 id="Debug和Release"><a href="#Debug和Release" class="headerlink" title="Debug和Release"></a>Debug和Release</h4>调试与发行<h3 id="Qt使用"><a href="#Qt使用" class="headerlink" title="Qt使用"></a>Qt使用</h3></li>
+</ul>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Sakura</span>
+                    </p>
+                
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a href="http://www.chic-mkt.com/" target="_blank" rel="noopener">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY<strong>?</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Study/"># Study</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();" target="_blank" rel="noopener">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2019/11/28/category/">Single Dog</a>
+            
+            
+            <a class="next" rel="next" href="/2019/11/28/Keane/">Keane</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Sakura | Powered by <a href="https://www.gettyimages.co.uk/" target="_blank" rel="noopener">Keane</a> & <a href="http://clearkeane.xyz/" target="_blank">Sakura</a> | Friend： <a href="https://cosz.club/" target="_blank">COSZ</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>

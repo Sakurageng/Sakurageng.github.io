@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Sakura">
+
+
+    <meta name="subtitle" content="Neworld">
+
+
+
+
+<title>书单-2019 | Sakura</title>
+
+
+
+    <link rel="icon" href="/dfavicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Sakura&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">博文</a>
+                
+                    <a class="menu-item" href="/category">分栏</a>
+                
+                    <a class="menu-item" href="/tag">标签</a>
+                
+                    <a class="menu-item" href="/jq227305.html">友链</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Sakura&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">博文</a>
+                
+                    <a class="menu-item" href="/category">分栏</a>
+                
+                    <a class="menu-item" href="/tag">标签</a>
+                
+                    <a class="menu-item" href="/jq227305.html">友链</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">书单-2019</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Sakura</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">November 29, 2019&nbsp;&nbsp;12:23:48</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E8%8C%B6%E4%B8%8E%E7%A6%85/">茶与禅</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h1 id="Sakura-的书单"><a href="#Sakura-的书单" class="headerlink" title="Sakura 的书单"></a>Sakura 的书单</h1><h2 id="2019年书单"><a href="#2019年书单" class="headerlink" title="2019年书单"></a>2019年书单</h2><ul>
+<li><input checked="" disabled="" type="checkbox"> 《菊与刀》</li>
+<li><input disabled="" type="checkbox"> 《霍乱时期的爱情》</li>
+<li><input disabled="" type="checkbox"> 《杀死一只知更鸟》</li>
+<li><input checked="" disabled="" type="checkbox"> 《皮囊》</li>
+<li><input disabled="" type="checkbox"> 《活着》</li>
+<li><input checked="" disabled="" type="checkbox"> 《从你的全世界路过》</li>
+<li><input disabled="" type="checkbox"> 《浮生六记》</li>
+<li><input disabled="" type="checkbox"> 《行为心理学》</li>
+<li><input disabled="" type="checkbox"> 《自卑与超越》</li>
+<li><input checked="" disabled="" type="checkbox"> 《生如夏花》</li>
+<li><input checked="" disabled="" type="checkbox"> 《九州捭阖录》</li>
+<li><input checked="" disabled="" type="checkbox"> 《商博良》</li>
+<li><input disabled="" type="checkbox"> 《无声告白》</li>
+<li><input checked="" disabled="" type="checkbox"> 《一个人的朝圣》</li>
+<li><input checked="" disabled="" type="checkbox"> 《悟空传》</li>
+<li><input disabled="" type="checkbox"> 《熊镇》</li>
+<li><input checked="" disabled="" type="checkbox"> 《我余生的第一天》</li>
+<li><input checked="" disabled="" type="checkbox"> 《魔鬼积木》</li>
+<li><input disabled="" type="checkbox"> 《美丽新世界》</li>
+<li><input checked="" disabled="" type="checkbox"> 《送你一颗子弹》</li>
+<li><input checked="" disabled="" type="checkbox"> 《上帝掷骰子吗》</li>
+<li><input disabled="" type="checkbox"> 《上帝笑了99次》</li>
+<li><input disabled="" type="checkbox"> 《呼啸山庄》</li>
+<li><input disabled="" type="checkbox"> 《厚黑学》</li>
+<li><input disabled="" type="checkbox"> 《巴黎圣母院》</li>
+<li><input disabled="" type="checkbox"> 《一句顶一万句》</li>
+<li><input disabled="" type="checkbox"> 《巨人的陨落》</li>
+<li><input checked="" disabled="" type="checkbox"> 《乌合之众》</li>
+<li><input disabled="" type="checkbox"> 《失乐园》</li>
+<li><input checked="" disabled="" type="checkbox"> 《给青年诗人的十封信》</li>
+<li><input disabled="" type="checkbox"> 《悲惨世界》</li>
+<li><input disabled="" type="checkbox"> 《墨菲定律》</li>
+<li><input checked="" disabled="" type="checkbox"> 《好的孤独》</li>
+<li><input disabled="" type="checkbox"> 《少有人走的路1》-斯科特-派克</li>
+<li><input disabled="" type="checkbox"> 《少有人走的路2》</li>
+<li><input disabled="" type="checkbox"> 《圣经》</li>
+<li><input disabled="" type="checkbox"> 《人生》</li>
+<li><input disabled="" type="checkbox"> 《一九八四》-奥威尔</li>
+<li><input disabled="" type="checkbox"> 《民主的细节》-刘瑜</li>
+<li><input disabled="" type="checkbox"> 《平凡的世界》-路遥</li>
+<li><input disabled="" type="checkbox"> 《瓦尔登湖》-梭路</li>
+<li><input disabled="" type="checkbox"> 《活着》-余华</li>
+<li><input disabled="" type="checkbox"> 《道德经》-老子</li>
+<li><input checked="" disabled="" type="checkbox"> 《如何阅读一本书》-艾德勒</li>
+<li><input checked="" disabled="" type="checkbox"> 《三体》-刘慈欣</li>
+<li><input disabled="" type="checkbox"> 《万历十五年》-黄仁宇</li>
+<li><input disabled="" type="checkbox"> 《红楼梦》-曹雪芹</li>
+<li><input disabled="" type="checkbox"> 《大秦帝国》-刘浩辉</li>
+<li><input checked="" disabled="" type="checkbox"> 《百年孤独》</li>
+<li><input disabled="" type="checkbox"> 《三重门》</li>
+<li><input disabled="" type="checkbox"> 《动物庄园》</li>
+<li><input checked="" disabled="" type="checkbox"> 《围城》</li>
+<li><input disabled="" type="checkbox"> 《沉思录》</li>
+<li><input disabled="" type="checkbox"> 《近距离看美国》</li>
+<li><input disabled="" type="checkbox"> 《宽容》</li>
+<li><input disabled="" type="checkbox"> 《遥远的救世主》</li>
+<li><input disabled="" type="checkbox"> 《重塑心灵》</li>
+<li><input disabled="" type="checkbox"> 《不能承受的生命之轻》</li>
+<li><input disabled="" type="checkbox"> 《小王子》</li>
+<li><input disabled="" type="checkbox"> 《爱的艺术》</li>
+<li><input disabled="" type="checkbox"> 《在路上》-凯鲁亚克</li>
+<li><input checked="" disabled="" type="checkbox"> 《挪威的森林》-村上春树</li>
+<li><input disabled="" type="checkbox"> 《1Q84》-村上春树</li>
+<li><input checked="" disabled="" type="checkbox"> 《人类简史》-尤瓦尔·赫拉利</li>
+<li><input disabled="" type="checkbox"> 《未来简史》</li>
+<li><input checked="" disabled="" type="checkbox"> 《龙与少年游》</li>
+<li><input checked="" disabled="" type="checkbox"> 《禅与摩托车维修艺术》</li>
+<li><input checked="" disabled="" type="checkbox"> 《上海堡垒》</li>
+<li><input disabled="" type="checkbox"> 《舞！舞！舞！》-村上</li>
+<li><input checked="" disabled="" type="checkbox"> 《天才在左疯子在右》</li>
+<li><input checked="" disabled="" type="checkbox"> 《月亮与六便士》</li>
+<li><input disabled="" type="checkbox"> 《追风筝的人》</li>
+<li><input checked="" disabled="" type="checkbox"> 《人间失格》</li>
+<li><input checked="" disabled="" type="checkbox"> 《灿烂千阳》</li>
+<li><input disabled="" type="checkbox"> 《自控力》</li>
+<li><input disabled="" type="checkbox"> 《影响力》</li>
+<li><input checked="" disabled="" type="checkbox"> 《情书》</li>
+<li><input checked="" disabled="" type="checkbox"> 《余生皆假期》</li>
+<li><input checked="" disabled="" type="checkbox"> 《一个叫欧维的男人决定去死》</li>
+<li><input disabled="" type="checkbox"> 《深度思考》</li>
+<li><input disabled="" type="checkbox"> 《练习的力量》</li>
+<li><input disabled="" type="checkbox"> 《人间词话》</li>
+<li><input checked="" disabled="" type="checkbox"> 《球状闪电》</li>
+<li><input checked="" disabled="" type="checkbox"> 《乡村教师》</li>
+<li><input disabled="" type="checkbox"> 《理想国》</li>
+<li><input checked="" disabled="" type="checkbox"> 《我在未来等你》</li>
+<li><input checked="" disabled="" type="checkbox"> 《笑场》</li>
+<li><input checked="" disabled="" type="checkbox"> 《冷场》</li>
+<li><input checked="" disabled="" type="checkbox"> 《无所畏》-冯唐</li>
+<li><input disabled="" type="checkbox"> 《毛泽东选集》1-5 </li>
+<li><input checked="" disabled="" type="checkbox"> 《时间移民》</li>
+<li><input checked="" disabled="" type="checkbox"> 《人生海海》</li>
+<li><input checked="" disabled="" type="checkbox"> 《恶意》</li>
+<li><input disabled="" type="checkbox"> 《放学后》</li>
+<li><input checked="" disabled="" type="checkbox"> 《白夜行》</li>
+<li><input disabled="" type="checkbox"> 《幻夜》</li>
+<li><input disabled="" type="checkbox"> 《疾风回旋曲》</li>
+<li><input disabled="" type="checkbox"> 《嫌疑人X的献身》</li>
+<li><input disabled="" type="checkbox"> 《岛上书店》</li>
+<li><input checked="" disabled="" type="checkbox"> 《解忧杂货铺》</li>
+<li><input disabled="" type="checkbox"> 《飘》</li>
+</ul>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Sakura</span>
+                    </p>
+                
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://www.chic-mkt.com/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY<strong>?</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Soul/"># Soul</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2019/11/29/MarkDown/">MarkDown</a>
+            
+            
+            <a class="next" rel="next" href="/2019/11/28/category/">Single Dog</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Sakura | Powered by <a>Hexo</a> & <a target="_blank">Chic</a> 
+</footer>
+
+    </div>
+    <!--动态线条背景-->
+<script type="text/javascript"
+color="150,150,150" opacity='0.7' zIndex="-2" count="200" src="/js/conas.min.js">
+</script> 
+</html>     
