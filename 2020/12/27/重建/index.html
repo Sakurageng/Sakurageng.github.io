@@ -14,7 +14,7 @@
 
 
 
-<title>《影单》 | Sakura</title>
+<title>重建 | Sakura</title>
 
 
 
@@ -110,11 +110,73 @@
             <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">《影单》</h1>
+            <h1 class="post-title">重建</h1>
             
                 <div class="post-meta">
                     
@@ -123,7 +185,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">February 5, 2020&nbsp;&nbsp;15:05:52</a>
+                        Date: <a href="#">December 27, 2020&nbsp;&nbsp;22:25:02</a>
                         </span>
                     
                     
@@ -132,9 +194,12 @@
         </header>
 
         <div class="post-content">
-            <ul>
-<li><input disabled="" type="checkbox"> 返老还童</li>
-</ul>
+            <h1 id="心"><a href="#心" class="headerlink" title="心"></a>心</h1><p>前段时间想呢，好像放弃/降低底线会活的快乐很多，哪怕是为了一时的欢愉去放纵自己也无可厚非。但是看见花总粉丝的一句话突然醒悟了：努力做个体面人，虽然这个世界有很多玩法，但是不要轻易降低自己的底线，一旦黑化就没机会回头</p>
+<p>还是努力做自己，花开是个过程，成长也不是一蹴而就，你很好，只是生活中的选择很重要， 要清楚自己想做什么要做什么，不要无所事事盲目的活。</p>
+<p>还有几句话也很有感触，记在这里：放下对别人的期待或执念，做好自己，人是为自己活着，不要活在别人的世界里，不要太在意别人的想法和看法，努力做对自己亲人朋友重要的人，做其他人世界里的路人就好。</p>
+<p>保持清醒的边界意识，这样对自己和他人都好。</p>
+<p>他说的这些话，我也没有认为是很对的，我认为这样可以活的很安稳，也许最终会获得幸福。<br>我现在只知道人是要不断突破自己的，不断去挑战自己不敢做的事情。<br>还是那个自己的初心：一切努力都是为了以后可以从容坦然的面对一切未知和挑战。</p>
+<p>2020.12.27晚</p>
 
         </div>
 
@@ -167,10 +232,6 @@
                 <span>Tag(s):</span>
                 <span class="tag">
                     
-                    
-                        <a href="/tags/movie/"># movie</a>
-                    
-                        
                 </span>
             </div>
             <div>
@@ -181,10 +242,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2020/12/27/%E9%87%8D%E5%BB%BA/">重建</a>
             
-            
-            <a class="next" rel="next" href="/2020/01/31/wine/">Wine</a>
+            <a class="next" rel="next" href="/2020/02/05/movie/">《影单》</a>
             
         </section>
 
