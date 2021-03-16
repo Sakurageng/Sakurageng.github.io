@@ -14,7 +14,7 @@
 
 
 
-<title>𝑲𝒆𝒂𝒏𝒆 | Sakura</title>
+<title>MathJax-test | Sakura</title>
 
 
 
@@ -41,6 +41,45 @@
 
     
     
+        
+            <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
         
     
 
@@ -110,11 +149,73 @@
             <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">𝑲𝒆𝒂𝒏𝒆</h1>
+            <h1 class="post-title">MathJax-test</h1>
             
                 <div class="post-meta">
                     
@@ -123,14 +224,14 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">December 26, 2019&nbsp;&nbsp;23:47:06</a>
+                        Date: <a href="#">March 16, 2016&nbsp;&nbsp;21:14:52</a>
                         </span>
                     
                     
                         <span class="post-category">
                     Category:
                             
-                                <a href="/categories/%E8%AF%97%E4%B8%8E%E6%AD%8C/">诗与歌</a>
+                                <a href="/categories/%F0%9D%91%86%F0%9D%91%A1%F0%9D%91%A2%F0%9D%91%91%F0%9D%91%A6/">𝑆𝑡𝑢𝑑𝑦</a>
                             
                         </span>
                     
@@ -139,11 +240,7 @@
         </header>
 
         <div class="post-content">
-            <p>「Indian Summer」是一个很美的词。</p>
-<p>这个词翻译成「印第安的夏天」（不是印度），它指的是在加美交界一个很特别的天气现象：在冬天来临之前忽然回暖的天气，宛若回到了温暖的夏天。</p>
-<p>而这段天气过后，接踵而来的便是寒冷。</p>
-<p>如果形容某一段恋情是Indian summer，就寓意着：<br>「漫长冰冷前短暂的温暖，在漫长的悲伤前短暂的幸福」。</p>
-<p>浪漫又悲伤。<br>正像他的名字Keanu，在夏威夷语里这个词的意思是cool breeze over the mountains，“吹过山间的一阵清风”。</p>
+            <h1 id="Perface"><a href="#Perface" class="headerlink" title="Perface"></a>Perface</h1><p>这是一个关于Math渲染功能的测试<br>$<br>\sum_{i=0}^N\int_{a}^{b}g(t,i)\text{d}t<br>$</p>
 
         </div>
 
@@ -176,10 +273,6 @@
                 <span>Tag(s):</span>
                 <span class="tag">
                     
-                    
-                        <a href="/tags/Soul/"># Soul</a>
-                    
-                        
                 </span>
             </div>
             <div>
@@ -190,10 +283,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2020/01/31/wine/">𝑾𝒊𝒏𝒆</a>
+                <a class="prev" rel="prev" href="/2018/10/26/%E4%B8%80%E5%B0%81%E4%BF%A1/">一封信</a>
             
-            
-            <a class="next" rel="next" href="/2019/12/26/%E9%B9%BF%E9%BC%8E%E8%AE%B0%E5%90%8D%E5%AD%97%E7%9A%84%E5%90%AB%E4%B9%89/">《鹿鼎记》书名的意思</a>
             
         </section>
 

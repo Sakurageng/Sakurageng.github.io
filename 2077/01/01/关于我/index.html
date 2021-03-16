@@ -14,7 +14,7 @@
 
 
 
-<title>𝑲𝒆𝒂𝒏𝒆 | Sakura</title>
+<title>关于我 | Sakura</title>
 
 
 
@@ -110,11 +110,73 @@
             <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">𝑲𝒆𝒂𝒏𝒆</h1>
+            <h1 class="post-title">关于我</h1>
             
                 <div class="post-meta">
                     
@@ -123,7 +185,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">December 26, 2019&nbsp;&nbsp;23:47:06</a>
+                        Date: <a href="#">January 1, 2077&nbsp;&nbsp;0:00:00</a>
                         </span>
                     
                     
@@ -139,11 +201,42 @@
         </header>
 
         <div class="post-content">
-            <p>「Indian Summer」是一个很美的词。</p>
-<p>这个词翻译成「印第安的夏天」（不是印度），它指的是在加美交界一个很特别的天气现象：在冬天来临之前忽然回暖的天气，宛若回到了温暖的夏天。</p>
-<p>而这段天气过后，接踵而来的便是寒冷。</p>
-<p>如果形容某一段恋情是Indian summer，就寓意着：<br>「漫长冰冷前短暂的温暖，在漫长的悲伤前短暂的幸福」。</p>
-<p>浪漫又悲伤。<br>正像他的名字Keanu，在夏威夷语里这个词的意思是cool breeze over the mountains，“吹过山间的一阵清风”。</p>
+            <h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><p>一个慢热的人。<br>尚未找到自己热爱的事业，依旧在找寻自己的未来。</p>
+<p>有一只可爱的猫猫茶茶</p>
+<h1 id="关于学业"><a href="#关于学业" class="headerlink" title="关于学业"></a>关于学业</h1><p>一个DS专业大三学生，考研中。</p>
+<p>我不喜欢学校所在的这个小城市，也不喜欢这所显得破旧的学校。所幸是在这里遇见了些有意思的人，但我最终还是下定决心跳出去。</p>
+<p>上了大三以来好像就被时间推着走，逼你做一个选择，关于前途。没有了大一/二的那种无虑，多了离开象牙塔的慌张。所幸最后还是下了这样的一个决心，所以将会有【咸鱼翻身】计划。</p>
+<p>敲出这段话，脑子里只有一个想法：</p>
+<p><strong>请往前走，不要在此停留。</strong></p>
+<p>所以在2021/3/15 我将其变成了我的主页介绍</p>
+<h1 id="关于爱好"><a href="#关于爱好" class="headerlink" title="关于爱好"></a>关于爱好</h1><ul>
+<li>看书</li>
+</ul>
+<p>喜欢看书，每年会给自己列书单，虽然最后并不能全部完成，但在每本书中确实都实实在在收获了许多。每本书都是一场时空旅行。</p>
+<p>看书的工具曾经是Kindle PaperWhite4 现在 更换为 Kindle Oasis2</p>
+<ul>
+<li>骑行</li>
+</ul>
+<p>这个算是年少时候对爱好了（笑），在那中二的年纪偏执的爱上了固齿，在家人都不同意的情况下还是花了几K买了一辆固齿。</p>
+<p>但在这么久的时间中，慢慢丢掉了爱好，慢慢生活的重心也变了。而固齿这种文化好像也在慢慢消逝（感觉可以扩大到街头文化）。</p>
+<p><img src="/image/psb.jpeg"></p>
+<ul>
+<li>编程（误</li>
+</ul>
+<p>说对编程感兴趣很宽泛也很假，说到底其实只是对创造一些东西感兴趣。用代码构建一个属于你的世界，你就是其中的上帝，这个领域里的一切都取决于你。基于此我甚至想去学绘画，感觉自己的理想是成为一名优秀的前端工程师，不过现在已经走了另一条路。</p>
+<h1 id="关于现在用的设备"><a href="#关于现在用的设备" class="headerlink" title="关于现在用的设备"></a>关于现在用的设备</h1><ul>
+<li>Kindle Oasis2</li>
+<li>Macbook Pro 2020 16+512G</li>
+<li>Ipad Air3</li>
+<li>Iphone XR</li>
+<li>Dell G3 1060-max-design-q</li>
+<li>Airpods Pro</li>
+<li>ATH-SR5</li>
+<li>Apple Watch series5</li>
+<li>XiaoMi 10s （还没拿到QAQ</li>
+</ul>
+<p>在某种程度，我过分依赖电子产品，不，与其说是一种依赖，不如说是迷恋。这种迷恋来自于对人自身的不自信。记忆不可相信，情感也转瞬即逝。感觉如果有仿生人或者是人体改造我应该会尝试的吧（苦笑）</p>
+<p>人性是复杂的，心理状态是多变的，早点意识到生活时常让人迷惑，能开心不少。</p>
 
         </div>
 
@@ -176,10 +269,6 @@
                 <span>Tag(s):</span>
                 <span class="tag">
                     
-                    
-                        <a href="/tags/Soul/"># Soul</a>
-                    
-                        
                 </span>
             </div>
             <div>
@@ -190,10 +279,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2020/01/31/wine/">𝑾𝒊𝒏𝒆</a>
             
-            
-            <a class="next" rel="next" href="/2019/12/26/%E9%B9%BF%E9%BC%8E%E8%AE%B0%E5%90%8D%E5%AD%97%E7%9A%84%E5%90%AB%E4%B9%89/">《鹿鼎记》书名的意思</a>
+            <a class="next" rel="next" href="/2021/03/15/%E3%80%8A%E5%B1%80%E5%A4%96%E4%BA%BA%E3%80%8B/">《局外人》</a>
             
         </section>
 
