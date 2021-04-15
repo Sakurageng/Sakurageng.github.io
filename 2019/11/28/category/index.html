@@ -274,7 +274,30 @@
             <a class="next" rel="next" href="/2019/08/27/%E7%BB%99%E4%B8%80%E5%B9%B4%E5%89%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9B%9E%E4%BF%A1/">给一年前自己的回信</a>
             
         </section>
-
+        
+            <section id="comments" class="comments">
+              <style>
+                .comments{margin:30px;padding:10px;background:#fff}
+                @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+              </style>
+              <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+      el: '.valine_comment',
+      app_id: 'GRNgSAW1UiMouy3f4UrSWeqX-gzGzoHsz',
+      app_key: '1l4rNmQJ2GpsC0TEjT2p6d7i',
+      placeholder: '可以留下你的看法',
+      notify: 'true',
+      verify: 'true',
+    });
+</script>
+            </section>
+        
 
     </article>
 </div>

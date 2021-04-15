@@ -187,7 +187,30 @@
             <a class="next" rel="next" href="/2020/01/31/wine/">𝑾𝒊𝒏𝒆</a>
             
         </section>
-
+        
+            <section id="comments" class="comments">
+              <style>
+                .comments{margin:30px;padding:10px;background:#fff}
+                @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+              </style>
+              <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+      el: '.valine_comment',
+      app_id: 'GRNgSAW1UiMouy3f4UrSWeqX-gzGzoHsz',
+      app_key: '1l4rNmQJ2GpsC0TEjT2p6d7i',
+      placeholder: '可以留下你的看法',
+      notify: 'true',
+      verify: 'true',
+    });
+</script>
+            </section>
+        
 
     </article>
 </div>
